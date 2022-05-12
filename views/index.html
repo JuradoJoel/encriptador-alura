@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="/css/general.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+    <script src="https://kit.fontawesome.com/018e74bdce.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <main>
+        <img src="/images/Logo.png" alt="logo" class="logo">
+
+        <section>
+            <div class="texto">
+                <textarea id="mensaje" placeholder="Ingrese el texto aquí" autofocus required></textarea>
+            </div>
+            <div class="botones">
+                <input type="submit" id="boton" value="encriptar" class="send">
+                <input type="reset" id="boton2" value="desencriptar" class="cancel">
+            </div>
+        </section>
+        <section class="contenedor-imagen">
+        </section>
+        <img src="/images/Muñeco.png" alt="muñeco" class="muñeco" id="muñeco">
+        <div class="texto-imagen">
+            <h2 id="esconderh2">Ningún mensaje fue encontrado</h2>
+            <h4 id="esconderh4">Ingresa el texto que desees encriptar o desencriptar</h4>
+        </div>
+
+        <div class="aclaracion">
+            <p><i class="fas fa-exclamation-circle"></i> Sólo letras minúsculas, sin acentos o carácteres especiales.
+            </p>
+        </div>
+        <textarea class="esconderResultado" id="resultado" cols="30" rows="10" readonly></textarea>
+
+    </main>
+
+    <script src="/js/codificador.js"></script>
+</body>
+
+</html>
